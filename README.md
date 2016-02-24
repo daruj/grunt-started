@@ -1,7 +1,7 @@
 # grunt-started
-Grunt: El automatizador de tareas de JavaScript
+Grunt: El automatizador de tareas de JavaScript<br />
 
-Por que usar un automatizador?: El trabajo se vuelve más facil cuando tareas tales como: minificar, ofuscar, concatenar , compilar, testiar, etc... se hacen de manera automática.
+Por que usar un automatizador?: El trabajo se vuelve más facil cuando tareas tales como: minificar, ofuscar, concatenar , compilar, testiar, etc... se hacen de manera automática. <br />
 Por que usar Grunt? : Existe una comunidad gigantesca creando miles de módulos todos los días. Esto hace que hoy en día podamos automatizar casi todo lo que necesitemos!
 
 
@@ -9,17 +9,18 @@ Lo primero que haremos será crear un nuevo proyecto de node y lo llamaremos tes
 
 Como Instalar Grunt: 
 
- Lo primero que haremos será instalar la interface de comandos para grunt de manera global: sudo npm install -g grunt grunt-cli
- Una vez hecho esto descargaremos dentro de nuestro proyecto el modulo de grunt: npm install grunt --save-dev
- Con estos dos pasos ya estamos listos para comenzar a usar grunt!
+ Lo primero que haremos será instalar la interface de comandos para grunt de manera global: ```sudo npm install -g grunt grunt-cli```<br />
+ Una vez hecho esto descargaremos dentro de nuestro proyecto el modulo de grunt: ```npm install grunt --save-dev```<br />
+ Con estos dos pasos ya estamos listos para comenzar a usar grunt!<br />
 
 
 Veamos como funciona con un ejemplo!
 
  Entremos dentro de nuestro proyecto testingGrunt y creemos una carpeta llamada scripts y dentro de ella un archivo llamado hello.js:
-
+```
   mkdir scripts
   touch hello.js (este comando crea un archivo vacio)
+  ```
 
  Ahora entremos dentro de nuestro archivo y escribamos y escribamos las siguientes lineas:
 ```
@@ -28,11 +29,11 @@ Veamos como funciona con un ejemplo!
 })("Hola mundo!")
 ```
 
- Guardemos nuestro archivo y volvamos a la raiz de nuestro proyecto: cd ../
+ Guardemos nuestro archivo y volvamos a la raiz de nuestro proyecto: ```cd ../```
  Una vez aquí lo que vamos a hacer es descargar un módulo de grunt para minificar nuestro código Js! Para ello ejecutaremos el siguiente comando:
-
+```
   npm install grunt-contrib-uglify --save-dev
-
+```
  Ahora creemos nuestro archivo de configuración de grunt: touch Gruntfile.js (Este archivo es el que va a ejecutar todas nuestras teras automatizadas)
  Dentro del archivo pegaremos el siguiente código:
 
@@ -83,7 +84,7 @@ Quieren un poco más????
  Si cada vez que hacemos un cambio en nuestro archivo hello.js tenemos que volver a ejecutar el comando: grunt , esto se volvería un poco tedioso, no ?
  Por ello les voy a enseñar como automatizar también esa tarea. Para ello utilizaremos el módulo: grunt-contrib-watch
 
- Para descargarlo ejecutaremos el siguiente código: npm install grunt-contrib-watch --save-dev
+ Para descargarlo ejecutaremos el siguiente código: ```npm install grunt-contrib-watch --save-dev```
  Una vez hecho esto volveremos a abrir nuestro archivo Gruntfile.js y lo dejaremos de la siguiente forma:
 
 
