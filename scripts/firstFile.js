@@ -1,3 +1,3 @@
 (function(msg){
-	alert("Hola :" + msg);
+	alert("Simón dice:" + msg);
 })("Como estás")
